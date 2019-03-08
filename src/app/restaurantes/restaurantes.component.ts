@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OfertasService } from '../ofertas.service';
 
 @Component({
   selector: 'app-restaurantes',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantesComponent implements OnInit {
 
-  constructor() { }
+  constructor(private ofertasService: OfertasService) { }
 
   ngOnInit() {
+    //jogat metodo das categorias
+    
   }
 
 }
