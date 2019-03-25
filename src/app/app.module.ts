@@ -10,6 +10,7 @@ import { DiversaoComponent } from './diversao/diversao.component';
 import { RestaurantesComponent } from './restaurantes/restaurantes.component';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
+import { OfertasService } from './ofertas.service';
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { ROUTES } from './app.routes';
     HttpClientModule,
     RouterModule.forRoot(ROUTES)
   ],
-  providers: [],
+  providers: [OfertasService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
